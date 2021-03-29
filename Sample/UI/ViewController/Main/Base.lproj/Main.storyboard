@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0df-7z-ov1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AkuratecoSDK Sample-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bPI-up-yau">
+                                <rect key="frame" x="16" y="338" width="382" height="220"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQU-7j-rOC" customClass="AkuratecoButton" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="30"/>
+                                        <state key="normal" title="SALE"/>
+                                        <connections>
+                                            <segue destination="NHk-AJ-O1X" kind="show" id="cJF-QG-TzS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApO-GY-eeJ" customClass="AkuratecoButton" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="38" width="382" height="30"/>
+                                        <state key="normal" title="RECURRING_SALE"/>
+                                        <connections>
+                                            <segue destination="aQv-sJ-Xve" kind="show" id="uNm-rH-52C"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsc-k3-wAB" customClass="AkuratecoButton" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="76" width="382" height="30"/>
+                                        <state key="normal" title="CAPTURE"/>
+                                        <connections>
+                                            <segue destination="sMK-Rz-Y9Z" kind="show" id="RC8-zL-HqK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F1N-T5-lSb" customClass="AkuratecoButton" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="114" width="382" height="30"/>
+                                        <state key="normal" title="CREDITVOID"/>
+                                        <connections>
+                                            <segue destination="2LO-qE-9fH" kind="show" id="mla-lW-teY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnw-co-1yL" customClass="AkuratecoButton" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="152" width="382" height="30"/>
+                                        <state key="normal" title="GET_TRANS_STATUS"/>
+                                        <connections>
+                                            <segue destination="MJV-p3-HwJ" kind="show" id="GZg-sj-cYv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baf-oa-oxC" customClass="AkuratecoButton" customModule="Sample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="190" width="382" height="30"/>
+                                        <state key="normal" title="GET_TRANS_DETAILS"/>
+                                        <connections>
+                                            <segue destination="MhT-Yo-U0k" kind="show" id="oOJ-lq-gno"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bPI-up-yau" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HFb-8c-KxK"/>
+                            <constraint firstItem="bPI-up-yau" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oi0-zN-8BP"/>
+                            <constraint firstItem="bPI-up-yau" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pqC-Fq-HMW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="AkuratecoSDK Sample" id="3Ts-or-2yA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="926.08695652173924" y="103.79464285714285"/>
+        </scene>
+        <!--AkuratecoSale-->
+        <scene sceneID="pGs-pz-lce">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AkuratecoSale" id="NHk-AJ-O1X" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Cfe-vf-DGg"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X6n-D6-lTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1663" y="-52"/>
+        </scene>
+        <!--AkuratecoRecurringSale-->
+        <scene sceneID="NgP-Oe-mNC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AkuratecoRecurringSale" id="aQv-sJ-Xve" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0F5-H0-ewv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nxN-hZ-XSH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1706" y="5"/>
+        </scene>
+        <!--AkuratecoCapture-->
+        <scene sceneID="ZeU-Lo-9U2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AkuratecoCapture" id="sMK-Rz-Y9Z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="E0a-sB-AfB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ETe-Rb-PYv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679" y="66"/>
+        </scene>
+        <!--AkuratecoCreditvoid-->
+        <scene sceneID="a9R-rL-ADq">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AkuratecoCreditvoid" id="2LO-qE-9fH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vLh-yZ-5IT"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXY-GH-bR5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="132"/>
+        </scene>
+        <!--AkuratecoGetTransStatus-->
+        <scene sceneID="f8e-6w-eSC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AkuratecoGetTransStatus" id="MJV-p3-HwJ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="jm9-da-6mv"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="otN-tR-gf6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712" y="196"/>
+        </scene>
+        <!--AkuratecoGetTransDetails-->
+        <scene sceneID="iXG-1J-OXp">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AkuratecoGetTransDetails" id="MhT-Yo-U0k" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Yrm-gu-sBQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="olK-2q-R5c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1714" y="258"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hYZ-Yd-B09">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0df-7z-ov1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TL5-Ke-53c">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" name="Orange"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z2A-39-iYt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Bq-fR-bpJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Orange">
+            <color red="0.92549019607843142" green="0.30980392156862746" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

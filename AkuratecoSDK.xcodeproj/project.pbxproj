@@ -1,0 +1,1178 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1105F97D2611104A00039963 /* AkuratecoAdapterFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1105F97C2611104A00039963 /* AkuratecoAdapterFactory.swift */; };
+		1117DA0025F68DA600C14534 /* AkuratecoHashUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117D9FF25F68DA600C14534 /* AkuratecoHashUtil.swift */; };
+		1117DA0325F6A2C900C14534 /* AkuratekoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117DA0225F6A2C900C14534 /* AkuratekoResult.swift */; };
+		1117DA0625F6A2DA00C14534 /* DetailsAkuratecoResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117DA0525F6A2DA00C14534 /* DetailsAkuratecoResultProtocol.swift */; };
+		1117DA0925F6A2F300C14534 /* OrderAkuratecoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117DA0825F6A2F300C14534 /* OrderAkuratecoResult.swift */; };
+		1117DA0C25F6A4F600C14534 /* AkuratecoExactError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117DA0B25F6A4F600C14534 /* AkuratecoExactError.swift */; };
+		1117DA0F25F6A68400C14534 /* AkuratecoCaptureResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117DA0E25F6A68400C14534 /* AkuratecoCaptureResult.swift */; };
+		1117DA1325F6AA9E00C14534 /* AkuratecoCaptureSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117DA1225F6AA9E00C14534 /* AkuratecoCaptureSuccess.swift */; };
+		1117DA1625F6AB6900C14534 /* AkuratecoSaleDecline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117DA1525F6AB6900C14534 /* AkuratecoSaleDecline.swift */; };
+		1117DA1A25F6B46C00C14534 /* AkuratecoRestApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1117DA1925F6B46C00C14534 /* AkuratecoRestApiClient.swift */; };
+		112FD0E825DB09DD000BE011 /* AkuratecoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112FD0E725DB09DD000BE011 /* AkuratecoError.swift */; };
+		113FF4372611270E007DA1AE /* AkuratecoOrderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113FF4362611270E007DA1AE /* AkuratecoOrderProtocol.swift */; };
+		114DA6B525F51399007A8DF7 /* AkuratecoCredential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114DA6B425F51399007A8DF7 /* AkuratecoCredential.swift */; };
+		1152AEA8261254FD00F551BA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1152AEA7261254FD00F551BA /* README.md */; };
+		1197845D25F91A2A00DB4EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197845C25F91A2A00DB4EC7 /* AppDelegate.swift */; };
+		1197846125F91A2A00DB4EC7 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197846025F91A2A00DB4EC7 /* MainVC.swift */; };
+		1197846425F91A2A00DB4EC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1197846225F91A2A00DB4EC7 /* Main.storyboard */; };
+		1197846625F91A2C00DB4EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1197846525F91A2C00DB4EC7 /* Assets.xcassets */; };
+		1197846925F91A2C00DB4EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1197846725F91A2C00DB4EC7 /* LaunchScreen.storyboard */; };
+		1197847125F91A4000DB4EC7 /* AkuratecoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C1232425D4734A002B42B3 /* AkuratecoSDK.framework */; };
+		1197847225F91A4000DB4EC7 /* AkuratecoSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11C1232425D4734A002B42B3 /* AkuratecoSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1197848425F922DD00DB4EC7 /* AkuratecoCaptureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197848325F922DD00DB4EC7 /* AkuratecoCaptureVC.swift */; };
+		1197848825F9232000DB4EC7 /* AkuratecoCreditvoidVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197848725F9232000DB4EC7 /* AkuratecoCreditvoidVC.swift */; };
+		1197848C25F9233800DB4EC7 /* AkuratecoGetTransDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197848B25F9233800DB4EC7 /* AkuratecoGetTransDetailsVC.swift */; };
+		1197848F25F9234400DB4EC7 /* AkuratecoGetTransStatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197848E25F9234400DB4EC7 /* AkuratecoGetTransStatusVC.swift */; };
+		1197849225F9234E00DB4EC7 /* AkuratecoRecurringSaleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197849125F9234E00DB4EC7 /* AkuratecoRecurringSaleVC.swift */; };
+		1197849525F9235700DB4EC7 /* AkuratecoRedirect3dsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197849425F9235700DB4EC7 /* AkuratecoRedirect3dsVC.swift */; };
+		1197849825F9236200DB4EC7 /* AkuratecoSaleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197849725F9236200DB4EC7 /* AkuratecoSaleVC.swift */; };
+		119784A025F9269300DB4EC7 /* AkuratecoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197849F25F9269300DB4EC7 /* AkuratecoButton.swift */; };
+		119784A425F92AA700DB4EC7 /* AkuratecoRadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119784A325F92AA700DB4EC7 /* AkuratecoRadioButton.swift */; };
+		119784B925F93AB100DB4EC7 /* AkuratecoSale.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119784B825F93AB100DB4EC7 /* AkuratecoSale.storyboard */; };
+		119784BC25F93ADF00DB4EC7 /* AkuratecoRecurringSale.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119784BB25F93ADF00DB4EC7 /* AkuratecoRecurringSale.storyboard */; };
+		119784BF25F93AE600DB4EC7 /* AkuratecoCapture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119784BE25F93AE600DB4EC7 /* AkuratecoCapture.storyboard */; };
+		119784C225F93AEB00DB4EC7 /* AkuratecoCreditvoid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119784C125F93AEB00DB4EC7 /* AkuratecoCreditvoid.storyboard */; };
+		119784C525F93AF300DB4EC7 /* AkuratecoGetTransStatus.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119784C425F93AF200DB4EC7 /* AkuratecoGetTransStatus.storyboard */; };
+		119784C825F93AF800DB4EC7 /* AkuratecoGetTransDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 119784C725F93AF800DB4EC7 /* AkuratecoGetTransDetails.storyboard */; };
+		119784D025F94AA200DB4EC7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119784CF25F94AA200DB4EC7 /* BaseViewController.swift */; };
+		119784D325F94CFE00DB4EC7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119784D225F94CFE00DB4EC7 /* Helpers.swift */; };
+		119784D825F9556000DB4EC7 /* AkuratecoTransactionStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119784D725F9556000DB4EC7 /* AkuratecoTransactionStorage.swift */; };
+		119784E125F95FB000DB4EC7 /* Fakery in Frameworks */ = {isa = PBXBuildFile; productRef = 119784E025F95FB000DB4EC7 /* Fakery */; };
+		11B2E09D25DAF45100A81E11 /* AkuratecoSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E09C25DAF45100A81E11 /* AkuratecoSDK.swift */; };
+		11B2E0A025DAF47600A81E11 /* AkuratecoBaseAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E09F25DAF47600A81E11 /* AkuratecoBaseAdapter.swift */; };
+		11B2E0A325DAF48B00A81E11 /* AkuratecoCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0A225DAF48B00A81E11 /* AkuratecoCallback.swift */; };
+		11B2E0A625DAF49200A81E11 /* AkuratecoCaptureAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0A525DAF49200A81E11 /* AkuratecoCaptureAdapter.swift */; };
+		11B2E0A925DAF49A00A81E11 /* AkuratecoCreditvoidAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0A825DAF49A00A81E11 /* AkuratecoCreditvoidAdapter.swift */; };
+		11B2E0AC25DAF4A400A81E11 /* AkuratecoGetTransactionDetailsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0AB25DAF4A400A81E11 /* AkuratecoGetTransactionDetailsAdapter.swift */; };
+		11B2E0AF25DAF4AB00A81E11 /* AkuratecoGetTransactionStatusAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0AE25DAF4AB00A81E11 /* AkuratecoGetTransactionStatusAdapter.swift */; };
+		11B2E0B225DAF4B100A81E11 /* AkuratecoRecurringSaleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0B125DAF4B100A81E11 /* AkuratecoRecurringSaleAdapter.swift */; };
+		11B2E0B525DAF4B800A81E11 /* AkuratecoSaleAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0B425DAF4B800A81E11 /* AkuratecoSaleAdapter.swift */; };
+		11B2E0B825DAF4E000A81E11 /* AkuratecoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0B725DAF4E000A81E11 /* AkuratecoAction.swift */; };
+		11B2E0BB25DAF4ED00A81E11 /* AkuratecoOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0BA25DAF4ED00A81E11 /* AkuratecoOption.swift */; };
+		11B2E0BE25DAF4F500A81E11 /* AkuratecoRedirectMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0BD25DAF4F500A81E11 /* AkuratecoRedirectMethod.swift */; };
+		11B2E0C125DAF4FC00A81E11 /* AkuratecoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0C025DAF4FC00A81E11 /* AkuratecoResult.swift */; };
+		11B2E0C425DAF50300A81E11 /* AkuratecoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0C325DAF50300A81E11 /* AkuratecoStatus.swift */; };
+		11B2E0C725DAF50A00A81E11 /* AkuratecoTransactionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0C625DAF50A00A81E11 /* AkuratecoTransactionStatus.swift */; };
+		11B2E0CA25DAF51100A81E11 /* AkuratecoTransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0C925DAF51100A81E11 /* AkuratecoTransactionType.swift */; };
+		11B2E0CD25DAF52200A81E11 /* AkuratecoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0CC25DAF52200A81E11 /* AkuratecoCard.swift */; };
+		11B2E0D025DAF52A00A81E11 /* AkuratecoCardFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0CF25DAF52A00A81E11 /* AkuratecoCardFormatter.swift */; };
+		11B2E0D325DAF53700A81E11 /* AkuratecoTestCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0D225DAF53700A81E11 /* AkuratecoTestCard.swift */; };
+		11B2E0D625DAF54C00A81E11 /* AkuratecoRecurringOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0D525DAF54C00A81E11 /* AkuratecoRecurringOptions.swift */; };
+		11B2E0D925DAF55300A81E11 /* AkuratecoSaleOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0D825DAF55300A81E11 /* AkuratecoSaleOptions.swift */; };
+		11B2E0DC25DAF55E00A81E11 /* AkuratecoOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0DB25DAF55E00A81E11 /* AkuratecoOrder.swift */; };
+		11B2E0DF25DAF56800A81E11 /* AkuratecoSaleOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0DE25DAF56800A81E11 /* AkuratecoSaleOrder.swift */; };
+		11B2E0E525DAF5A700A81E11 /* AkuratecoPayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0E425DAF5A700A81E11 /* AkuratecoPayer.swift */; };
+		11B2E0E825DAF5AD00A81E11 /* AkuratecoPayerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0E725DAF5AD00A81E11 /* AkuratecoPayerOptions.swift */; };
+		11B2E0EB25DAF5B400A81E11 /* AkuratecoPayerOptionsFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B2E0EA25DAF5B400A81E11 /* AkuratecoPayerOptionsFormatter.swift */; };
+		11BF2D4E25F7FACC006C4B4F /* AkuratecoCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D4D25F7FACC006C4B4F /* AkuratecoCaptureService.swift */; };
+		11BF2D5125F7FD20006C4B4F /* AkuratecoCreditvoidService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D5025F7FD20006C4B4F /* AkuratecoCreditvoidService.swift */; };
+		11BF2D5425F7FDC8006C4B4F /* AkuratecoCreditvoidResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D5325F7FDC8006C4B4F /* AkuratecoCreditvoidResult.swift */; };
+		11BF2D5725F7FF22006C4B4F /* AkuratecoCreditvoidSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D5625F7FF22006C4B4F /* AkuratecoCreditvoidSuccess.swift */; };
+		11BF2D5A25F8007D006C4B4F /* AkuratecoTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D5925F8007D006C4B4F /* AkuratecoTransaction.swift */; };
+		11BF2D5D25F80158006C4B4F /* AkuratecoGetTransactionDetailsSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D5C25F80158006C4B4F /* AkuratecoGetTransactionDetailsSuccess.swift */; };
+		11BF2D6125F8021F006C4B4F /* AkuratecoGetTransactionDetailsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D6025F8021F006C4B4F /* AkuratecoGetTransactionDetailsResult.swift */; };
+		11BF2D6525F80277006C4B4F /* AkuratecoGetTransactionStatusSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D6425F80277006C4B4F /* AkuratecoGetTransactionStatusSuccess.swift */; };
+		11BF2D6825F802F0006C4B4F /* AkuratecoGetTransactionStatusResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D6725F802F0006C4B4F /* AkuratecoGetTransactionStatusResult.swift */; };
+		11BF2D6B25F8031D006C4B4F /* AkuratecoSale3ds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D6A25F8031D006C4B4F /* AkuratecoSale3ds.swift */; };
+		11BF2D6F25F8040C006C4B4F /* AkuratecoSaleRecurring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D6E25F8040C006C4B4F /* AkuratecoSaleRecurring.swift */; };
+		11BF2D7225F804AB006C4B4F /* AkuratecoSaleRedirectParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D7125F804AB006C4B4F /* AkuratecoSaleRedirectParams.swift */; };
+		11BF2D7525F805CE006C4B4F /* AkuratecoSaleSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D7425F805CE006C4B4F /* AkuratecoSaleSuccess.swift */; };
+		11BF2D7825F80698006C4B4F /* AkuratecoSaleResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D7725F80698006C4B4F /* AkuratecoSaleResult.swift */; };
+		11BF2D7B25F80737006C4B4F /* AkuratecoGetTransactionDetailsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D7A25F80737006C4B4F /* AkuratecoGetTransactionDetailsService.swift */; };
+		11BF2D7E25F807DC006C4B4F /* AkuratecoGetTransactionStatusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D7D25F807DC006C4B4F /* AkuratecoGetTransactionStatusService.swift */; };
+		11BF2D8125F8080F006C4B4F /* AkuratecoRecurringSaleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D8025F8080F006C4B4F /* AkuratecoRecurringSaleService.swift */; };
+		11BF2D8425F808A2006C4B4F /* AkuratecoSaleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D8325F808A2006C4B4F /* AkuratecoSaleService.swift */; };
+		11BF2D8725F81062006C4B4F /* AkuratecoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D8625F81062006C4B4F /* AkuratecoExtensions.swift */; };
+		11BF2D8A25F811E7006C4B4F /* AkuratecoAmountFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BF2D8925F811E7006C4B4F /* AkuratecoAmountFormatter.swift */; };
+		11C1232925D4734A002B42B3 /* AkuratecoSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C1232725D4734A002B42B3 /* AkuratecoSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11E2BE1625FA325F0044770F /* AkuratecoChooserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2BE1525FA325F0044770F /* AkuratecoChooserVC.swift */; };
+		11E2BE1A25FA394B0044770F /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2BE1925FA394B0044770F /* TransactionViewController.swift */; };
+		11E2BE1D25FA6EA20044770F /* AkuratekoDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2BE1C25FA6EA20044770F /* AkuratekoDateFormatter.swift */; };
+		11E2BE2025FA728F0044770F /* AkuratecoSaleDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2BE1F25FA728F0044770F /* AkuratecoSaleDeserializer.swift */; };
+		11E2BE2325FA7B2B0044770F /* AkuratecoCaptureDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2BE2225FA7B2B0044770F /* AkuratecoCaptureDeserializer.swift */; };
+		11E2BE2625FA7C820044770F /* AkuratecoCreditvoidDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2BE2525FA7C820044770F /* AkuratecoCreditvoidDeserializer.swift */; };
+		11E2BE2925FA7E890044770F /* AkuratecoGetTransactionDetailsDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2BE2825FA7E890044770F /* AkuratecoGetTransactionDetailsDeserializer.swift */; };
+		11E2BE2C25FA7ECF0044770F /* AkuratecoGetTransactionStatusDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2BE2B25FA7ECF0044770F /* AkuratecoGetTransactionStatusDeserializer.swift */; };
+		11E2BE3125FA80500044770F /* XWWWFormUrlEncodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E2BE3025FA80500044770F /* XWWWFormUrlEncodable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1197847325F91A4000DB4EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 11C1231B25D4734A002B42B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11C1232325D4734A002B42B3;
+			remoteInfo = "Akurateco SDK";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1197847525F91A4000DB4EC7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1197847225F91A4000DB4EC7 /* AkuratecoSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1105F97C2611104A00039963 /* AkuratecoAdapterFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoAdapterFactory.swift; sourceTree = "<group>"; };
+		1117D9FF25F68DA600C14534 /* AkuratecoHashUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoHashUtil.swift; sourceTree = "<group>"; };
+		1117DA0225F6A2C900C14534 /* AkuratekoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratekoResult.swift; sourceTree = "<group>"; };
+		1117DA0525F6A2DA00C14534 /* DetailsAkuratecoResultProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsAkuratecoResultProtocol.swift; sourceTree = "<group>"; };
+		1117DA0825F6A2F300C14534 /* OrderAkuratecoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderAkuratecoResult.swift; sourceTree = "<group>"; };
+		1117DA0B25F6A4F600C14534 /* AkuratecoExactError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoExactError.swift; sourceTree = "<group>"; };
+		1117DA0E25F6A68400C14534 /* AkuratecoCaptureResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCaptureResult.swift; sourceTree = "<group>"; };
+		1117DA1225F6AA9E00C14534 /* AkuratecoCaptureSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCaptureSuccess.swift; sourceTree = "<group>"; };
+		1117DA1525F6AB6900C14534 /* AkuratecoSaleDecline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSaleDecline.swift; sourceTree = "<group>"; };
+		1117DA1925F6B46C00C14534 /* AkuratecoRestApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoRestApiClient.swift; sourceTree = "<group>"; };
+		112FD0E725DB09DD000BE011 /* AkuratecoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoError.swift; sourceTree = "<group>"; };
+		113FF4362611270E007DA1AE /* AkuratecoOrderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoOrderProtocol.swift; sourceTree = "<group>"; };
+		114DA6B425F51399007A8DF7 /* AkuratecoCredential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkuratecoCredential.swift; sourceTree = "<group>"; };
+		1152AEA7261254FD00F551BA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
+		1197845A25F91A2A00DB4EC7 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1197845C25F91A2A00DB4EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1197846025F91A2A00DB4EC7 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		1197846325F91A2A00DB4EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1197846525F91A2C00DB4EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1197846825F91A2C00DB4EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1197846A25F91A2C00DB4EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1197848325F922DD00DB4EC7 /* AkuratecoCaptureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCaptureVC.swift; sourceTree = "<group>"; };
+		1197848725F9232000DB4EC7 /* AkuratecoCreditvoidVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCreditvoidVC.swift; sourceTree = "<group>"; };
+		1197848B25F9233800DB4EC7 /* AkuratecoGetTransDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoGetTransDetailsVC.swift; sourceTree = "<group>"; };
+		1197848E25F9234400DB4EC7 /* AkuratecoGetTransStatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoGetTransStatusVC.swift; sourceTree = "<group>"; };
+		1197849125F9234E00DB4EC7 /* AkuratecoRecurringSaleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoRecurringSaleVC.swift; sourceTree = "<group>"; };
+		1197849425F9235700DB4EC7 /* AkuratecoRedirect3dsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoRedirect3dsVC.swift; sourceTree = "<group>"; };
+		1197849725F9236200DB4EC7 /* AkuratecoSaleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSaleVC.swift; sourceTree = "<group>"; };
+		1197849F25F9269300DB4EC7 /* AkuratecoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoButton.swift; sourceTree = "<group>"; };
+		119784A325F92AA700DB4EC7 /* AkuratecoRadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoRadioButton.swift; sourceTree = "<group>"; };
+		119784B825F93AB100DB4EC7 /* AkuratecoSale.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AkuratecoSale.storyboard; sourceTree = "<group>"; };
+		119784BB25F93ADF00DB4EC7 /* AkuratecoRecurringSale.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AkuratecoRecurringSale.storyboard; sourceTree = "<group>"; };
+		119784BE25F93AE600DB4EC7 /* AkuratecoCapture.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AkuratecoCapture.storyboard; sourceTree = "<group>"; };
+		119784C125F93AEB00DB4EC7 /* AkuratecoCreditvoid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AkuratecoCreditvoid.storyboard; sourceTree = "<group>"; };
+		119784C425F93AF200DB4EC7 /* AkuratecoGetTransStatus.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AkuratecoGetTransStatus.storyboard; sourceTree = "<group>"; };
+		119784C725F93AF800DB4EC7 /* AkuratecoGetTransDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AkuratecoGetTransDetails.storyboard; sourceTree = "<group>"; };
+		119784CF25F94AA200DB4EC7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		119784D225F94CFE00DB4EC7 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		119784D725F9556000DB4EC7 /* AkuratecoTransactionStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoTransactionStorage.swift; sourceTree = "<group>"; };
+		11B2E09C25DAF45100A81E11 /* AkuratecoSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSDK.swift; sourceTree = "<group>"; };
+		11B2E09F25DAF47600A81E11 /* AkuratecoBaseAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoBaseAdapter.swift; sourceTree = "<group>"; };
+		11B2E0A225DAF48B00A81E11 /* AkuratecoCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCallback.swift; sourceTree = "<group>"; };
+		11B2E0A525DAF49200A81E11 /* AkuratecoCaptureAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCaptureAdapter.swift; sourceTree = "<group>"; };
+		11B2E0A825DAF49A00A81E11 /* AkuratecoCreditvoidAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCreditvoidAdapter.swift; sourceTree = "<group>"; };
+		11B2E0AB25DAF4A400A81E11 /* AkuratecoGetTransactionDetailsAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoGetTransactionDetailsAdapter.swift; sourceTree = "<group>"; };
+		11B2E0AE25DAF4AB00A81E11 /* AkuratecoGetTransactionStatusAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoGetTransactionStatusAdapter.swift; sourceTree = "<group>"; };
+		11B2E0B125DAF4B100A81E11 /* AkuratecoRecurringSaleAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoRecurringSaleAdapter.swift; sourceTree = "<group>"; };
+		11B2E0B425DAF4B800A81E11 /* AkuratecoSaleAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSaleAdapter.swift; sourceTree = "<group>"; };
+		11B2E0B725DAF4E000A81E11 /* AkuratecoAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoAction.swift; sourceTree = "<group>"; };
+		11B2E0BA25DAF4ED00A81E11 /* AkuratecoOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoOption.swift; sourceTree = "<group>"; };
+		11B2E0BD25DAF4F500A81E11 /* AkuratecoRedirectMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoRedirectMethod.swift; sourceTree = "<group>"; };
+		11B2E0C025DAF4FC00A81E11 /* AkuratecoResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoResult.swift; sourceTree = "<group>"; };
+		11B2E0C325DAF50300A81E11 /* AkuratecoStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoStatus.swift; sourceTree = "<group>"; };
+		11B2E0C625DAF50A00A81E11 /* AkuratecoTransactionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoTransactionStatus.swift; sourceTree = "<group>"; };
+		11B2E0C925DAF51100A81E11 /* AkuratecoTransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoTransactionType.swift; sourceTree = "<group>"; };
+		11B2E0CC25DAF52200A81E11 /* AkuratecoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCard.swift; sourceTree = "<group>"; };
+		11B2E0CF25DAF52A00A81E11 /* AkuratecoCardFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCardFormatter.swift; sourceTree = "<group>"; };
+		11B2E0D225DAF53700A81E11 /* AkuratecoTestCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoTestCard.swift; sourceTree = "<group>"; };
+		11B2E0D525DAF54C00A81E11 /* AkuratecoRecurringOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoRecurringOptions.swift; sourceTree = "<group>"; };
+		11B2E0D825DAF55300A81E11 /* AkuratecoSaleOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSaleOptions.swift; sourceTree = "<group>"; };
+		11B2E0DB25DAF55E00A81E11 /* AkuratecoOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoOrder.swift; sourceTree = "<group>"; };
+		11B2E0DE25DAF56800A81E11 /* AkuratecoSaleOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSaleOrder.swift; sourceTree = "<group>"; };
+		11B2E0E425DAF5A700A81E11 /* AkuratecoPayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoPayer.swift; sourceTree = "<group>"; };
+		11B2E0E725DAF5AD00A81E11 /* AkuratecoPayerOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoPayerOptions.swift; sourceTree = "<group>"; };
+		11B2E0EA25DAF5B400A81E11 /* AkuratecoPayerOptionsFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoPayerOptionsFormatter.swift; sourceTree = "<group>"; };
+		11BF2D4D25F7FACC006C4B4F /* AkuratecoCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCaptureService.swift; sourceTree = "<group>"; };
+		11BF2D5025F7FD20006C4B4F /* AkuratecoCreditvoidService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCreditvoidService.swift; sourceTree = "<group>"; };
+		11BF2D5325F7FDC8006C4B4F /* AkuratecoCreditvoidResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCreditvoidResult.swift; sourceTree = "<group>"; };
+		11BF2D5625F7FF22006C4B4F /* AkuratecoCreditvoidSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCreditvoidSuccess.swift; sourceTree = "<group>"; };
+		11BF2D5925F8007D006C4B4F /* AkuratecoTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoTransaction.swift; sourceTree = "<group>"; };
+		11BF2D5C25F80158006C4B4F /* AkuratecoGetTransactionDetailsSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoGetTransactionDetailsSuccess.swift; sourceTree = "<group>"; };
+		11BF2D6025F8021F006C4B4F /* AkuratecoGetTransactionDetailsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoGetTransactionDetailsResult.swift; sourceTree = "<group>"; };
+		11BF2D6425F80277006C4B4F /* AkuratecoGetTransactionStatusSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoGetTransactionStatusSuccess.swift; sourceTree = "<group>"; };
+		11BF2D6725F802F0006C4B4F /* AkuratecoGetTransactionStatusResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoGetTransactionStatusResult.swift; sourceTree = "<group>"; };
+		11BF2D6A25F8031D006C4B4F /* AkuratecoSale3ds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSale3ds.swift; sourceTree = "<group>"; };
+		11BF2D6E25F8040C006C4B4F /* AkuratecoSaleRecurring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSaleRecurring.swift; sourceTree = "<group>"; };
+		11BF2D7125F804AB006C4B4F /* AkuratecoSaleRedirectParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSaleRedirectParams.swift; sourceTree = "<group>"; };
+		11BF2D7425F805CE006C4B4F /* AkuratecoSaleSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSaleSuccess.swift; sourceTree = "<group>"; };
+		11BF2D7725F80698006C4B4F /* AkuratecoSaleResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSaleResult.swift; sourceTree = "<group>"; };
+		11BF2D7A25F80737006C4B4F /* AkuratecoGetTransactionDetailsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoGetTransactionDetailsService.swift; sourceTree = "<group>"; };
+		11BF2D7D25F807DC006C4B4F /* AkuratecoGetTransactionStatusService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoGetTransactionStatusService.swift; sourceTree = "<group>"; };
+		11BF2D8025F8080F006C4B4F /* AkuratecoRecurringSaleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoRecurringSaleService.swift; sourceTree = "<group>"; };
+		11BF2D8325F808A2006C4B4F /* AkuratecoSaleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSaleService.swift; sourceTree = "<group>"; };
+		11BF2D8625F81062006C4B4F /* AkuratecoExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoExtensions.swift; sourceTree = "<group>"; };
+		11BF2D8925F811E7006C4B4F /* AkuratecoAmountFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoAmountFormatter.swift; sourceTree = "<group>"; };
+		11C1232425D4734A002B42B3 /* AkuratecoSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AkuratecoSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C1232725D4734A002B42B3 /* AkuratecoSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AkuratecoSDK.h; sourceTree = "<group>"; };
+		11C1232825D4734A002B42B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11E2BE1525FA325F0044770F /* AkuratecoChooserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoChooserVC.swift; sourceTree = "<group>"; };
+		11E2BE1925FA394B0044770F /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		11E2BE1C25FA6EA20044770F /* AkuratekoDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratekoDateFormatter.swift; sourceTree = "<group>"; };
+		11E2BE1F25FA728F0044770F /* AkuratecoSaleDeserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoSaleDeserializer.swift; sourceTree = "<group>"; };
+		11E2BE2225FA7B2B0044770F /* AkuratecoCaptureDeserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCaptureDeserializer.swift; sourceTree = "<group>"; };
+		11E2BE2525FA7C820044770F /* AkuratecoCreditvoidDeserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoCreditvoidDeserializer.swift; sourceTree = "<group>"; };
+		11E2BE2825FA7E890044770F /* AkuratecoGetTransactionDetailsDeserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoGetTransactionDetailsDeserializer.swift; sourceTree = "<group>"; };
+		11E2BE2B25FA7ECF0044770F /* AkuratecoGetTransactionStatusDeserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AkuratecoGetTransactionStatusDeserializer.swift; sourceTree = "<group>"; };
+		11E2BE3025FA80500044770F /* XWWWFormUrlEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XWWWFormUrlEncodable.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1197845725F91A2A00DB4EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				119784E125F95FB000DB4EC7 /* Fakery in Frameworks */,
+				1197847125F91A4000DB4EC7 /* AkuratecoSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C1232125D4734A002B42B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1197845B25F91A2A00DB4EC7 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				1197845C25F91A2A00DB4EC7 /* AppDelegate.swift */,
+				119784D525F9555A00DB4EC7 /* App */,
+				1197848125F922D200DB4EC7 /* UI */,
+				1197846525F91A2C00DB4EC7 /* Assets.xcassets */,
+				1197846725F91A2C00DB4EC7 /* LaunchScreen.storyboard */,
+				1197846A25F91A2C00DB4EC7 /* Info.plist */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		1197847025F91A3F00DB4EC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1197848125F922D200DB4EC7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1197849E25F9268600DB4EC7 /* View */,
+				1197849B25F9267300DB4EC7 /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1197849B25F9267300DB4EC7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				119784A725F93A4400DB4EC7 /* Main */,
+				119784A925F93A5200DB4EC7 /* Sale */,
+				119784AB25F93A5700DB4EC7 /* RecurringSale */,
+				119784AD25F93A5F00DB4EC7 /* Capture */,
+				119784AF25F93A6500DB4EC7 /* CreditVoid */,
+				119784B225F93A6A00DB4EC7 /* GetTransStatus */,
+				119784B425F93A7600DB4EC7 /* GetTransDetails */,
+				1197849425F9235700DB4EC7 /* AkuratecoRedirect3dsVC.swift */,
+				119784CF25F94AA200DB4EC7 /* BaseViewController.swift */,
+				11E2BE1925FA394B0044770F /* TransactionViewController.swift */,
+				11E2BE1525FA325F0044770F /* AkuratecoChooserVC.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1197849E25F9268600DB4EC7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1197849F25F9269300DB4EC7 /* AkuratecoButton.swift */,
+				119784A325F92AA700DB4EC7 /* AkuratecoRadioButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		119784A725F93A4400DB4EC7 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1197846225F91A2A00DB4EC7 /* Main.storyboard */,
+				1197846025F91A2A00DB4EC7 /* MainVC.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		119784A925F93A5200DB4EC7 /* Sale */ = {
+			isa = PBXGroup;
+			children = (
+				119784B825F93AB100DB4EC7 /* AkuratecoSale.storyboard */,
+				1197849725F9236200DB4EC7 /* AkuratecoSaleVC.swift */,
+			);
+			path = Sale;
+			sourceTree = "<group>";
+		};
+		119784AB25F93A5700DB4EC7 /* RecurringSale */ = {
+			isa = PBXGroup;
+			children = (
+				119784BB25F93ADF00DB4EC7 /* AkuratecoRecurringSale.storyboard */,
+				1197849125F9234E00DB4EC7 /* AkuratecoRecurringSaleVC.swift */,
+			);
+			path = RecurringSale;
+			sourceTree = "<group>";
+		};
+		119784AD25F93A5F00DB4EC7 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				119784BE25F93AE600DB4EC7 /* AkuratecoCapture.storyboard */,
+				1197848325F922DD00DB4EC7 /* AkuratecoCaptureVC.swift */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		119784AF25F93A6500DB4EC7 /* CreditVoid */ = {
+			isa = PBXGroup;
+			children = (
+				119784C125F93AEB00DB4EC7 /* AkuratecoCreditvoid.storyboard */,
+				1197848725F9232000DB4EC7 /* AkuratecoCreditvoidVC.swift */,
+			);
+			path = CreditVoid;
+			sourceTree = "<group>";
+		};
+		119784B225F93A6A00DB4EC7 /* GetTransStatus */ = {
+			isa = PBXGroup;
+			children = (
+				119784C425F93AF200DB4EC7 /* AkuratecoGetTransStatus.storyboard */,
+				1197848E25F9234400DB4EC7 /* AkuratecoGetTransStatusVC.swift */,
+			);
+			path = GetTransStatus;
+			sourceTree = "<group>";
+		};
+		119784B425F93A7600DB4EC7 /* GetTransDetails */ = {
+			isa = PBXGroup;
+			children = (
+				119784C725F93AF800DB4EC7 /* AkuratecoGetTransDetails.storyboard */,
+				1197848B25F9233800DB4EC7 /* AkuratecoGetTransDetailsVC.swift */,
+			);
+			path = GetTransDetails;
+			sourceTree = "<group>";
+		};
+		119784D525F9555A00DB4EC7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				119784D225F94CFE00DB4EC7 /* Helpers.swift */,
+				119784D725F9556000DB4EC7 /* AkuratecoTransactionStorage.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		11C1231A25D4734A002B42B3 = {
+			isa = PBXGroup;
+			children = (
+				11C1232625D4734A002B42B3 /* AkuratecoSDK */,
+				1197845B25F91A2A00DB4EC7 /* Sample */,
+				11C1232525D4734A002B42B3 /* Products */,
+				1197847025F91A3F00DB4EC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11C1232525D4734A002B42B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11C1232425D4734A002B42B3 /* AkuratecoSDK.framework */,
+				1197845A25F91A2A00DB4EC7 /* Sample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11C1232625D4734A002B42B3 /* AkuratecoSDK */ = {
+			isa = PBXGroup;
+			children = (
+				11C1232725D4734A002B42B3 /* AkuratecoSDK.h */,
+				11C1233125D475CE002B42B3 /* Core */,
+				11C1233225D47614002B42B3 /* Feature */,
+				11C1233325D47626002B42B3 /* Model */,
+				11C1233425D47638002B42B3 /* Toolbox */,
+				11C1232825D4734A002B42B3 /* Info.plist */,
+				1152AEA7261254FD00F551BA /* README.md */,
+			);
+			path = AkuratecoSDK;
+			sourceTree = "<group>";
+		};
+		11C1233125D475CE002B42B3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				114DA6B425F51399007A8DF7 /* AkuratecoCredential.swift */,
+				11B2E09C25DAF45100A81E11 /* AkuratecoSDK.swift */,
+				1105F97C2611104A00039963 /* AkuratecoAdapterFactory.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		11C1233225D47614002B42B3 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				11C1233525D47651002B42B3 /* Adapter */,
+				11C1233625D4767C002B42B3 /* Deserealizer */,
+				11C1233825D476BA002B42B3 /* Service */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		11C1233325D47626002B42B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11C1233925D476CC002B42B3 /* API */,
+				11C1233B25D476DF002B42B3 /* Request */,
+				11C1233A25D476DA002B42B3 /* Response */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11C1233425D47638002B42B3 /* Toolbox */ = {
+			isa = PBXGroup;
+			children = (
+				11E2BE2E25FA80480044770F /* ApiClient */,
+				11BF2D8925F811E7006C4B4F /* AkuratecoAmountFormatter.swift */,
+				11E2BE1C25FA6EA20044770F /* AkuratekoDateFormatter.swift */,
+				1117D9FF25F68DA600C14534 /* AkuratecoHashUtil.swift */,
+				11BF2D8625F81062006C4B4F /* AkuratecoExtensions.swift */,
+			);
+			path = Toolbox;
+			sourceTree = "<group>";
+		};
+		11C1233525D47651002B42B3 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				11B2E0A225DAF48B00A81E11 /* AkuratecoCallback.swift */,
+				11B2E09F25DAF47600A81E11 /* AkuratecoBaseAdapter.swift */,
+				11B2E0A525DAF49200A81E11 /* AkuratecoCaptureAdapter.swift */,
+				11B2E0A825DAF49A00A81E11 /* AkuratecoCreditvoidAdapter.swift */,
+				11B2E0AB25DAF4A400A81E11 /* AkuratecoGetTransactionDetailsAdapter.swift */,
+				11B2E0AE25DAF4AB00A81E11 /* AkuratecoGetTransactionStatusAdapter.swift */,
+				11B2E0B125DAF4B100A81E11 /* AkuratecoRecurringSaleAdapter.swift */,
+				11B2E0B425DAF4B800A81E11 /* AkuratecoSaleAdapter.swift */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		11C1233625D4767C002B42B3 /* Deserealizer */ = {
+			isa = PBXGroup;
+			children = (
+				11E2BE1F25FA728F0044770F /* AkuratecoSaleDeserializer.swift */,
+				11E2BE2225FA7B2B0044770F /* AkuratecoCaptureDeserializer.swift */,
+				11E2BE2525FA7C820044770F /* AkuratecoCreditvoidDeserializer.swift */,
+				11E2BE2825FA7E890044770F /* AkuratecoGetTransactionDetailsDeserializer.swift */,
+				11E2BE2B25FA7ECF0044770F /* AkuratecoGetTransactionStatusDeserializer.swift */,
+			);
+			path = Deserealizer;
+			sourceTree = "<group>";
+		};
+		11C1233825D476BA002B42B3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				11BF2D4D25F7FACC006C4B4F /* AkuratecoCaptureService.swift */,
+				11BF2D5025F7FD20006C4B4F /* AkuratecoCreditvoidService.swift */,
+				11BF2D7A25F80737006C4B4F /* AkuratecoGetTransactionDetailsService.swift */,
+				11BF2D7D25F807DC006C4B4F /* AkuratecoGetTransactionStatusService.swift */,
+				11BF2D8025F8080F006C4B4F /* AkuratecoRecurringSaleService.swift */,
+				11BF2D8325F808A2006C4B4F /* AkuratecoSaleService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		11C1233925D476CC002B42B3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				11B2E0B725DAF4E000A81E11 /* AkuratecoAction.swift */,
+				11B2E0BA25DAF4ED00A81E11 /* AkuratecoOption.swift */,
+				11B2E0BD25DAF4F500A81E11 /* AkuratecoRedirectMethod.swift */,
+				11B2E0C025DAF4FC00A81E11 /* AkuratecoResult.swift */,
+				11B2E0C325DAF50300A81E11 /* AkuratecoStatus.swift */,
+				11B2E0C625DAF50A00A81E11 /* AkuratecoTransactionStatus.swift */,
+				11B2E0C925DAF51100A81E11 /* AkuratecoTransactionType.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		11C1233A25D476DA002B42B3 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				11C1234525D4776F002B42B3 /* Base */,
+				11C1234425D47766002B42B3 /* Capture */,
+				11C1234325D4775E002B42B3 /* Creditvoid */,
+				11C1234225D4774D002B42B3 /* GetTransactionDetails */,
+				11C1234125D4773F002B42B3 /* GetTransactionStatus */,
+				11C1234025D47716002B42B3 /* Sale */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		11C1233B25D476DF002B42B3 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				11C1233C25D476F2002B42B3 /* Card */,
+				11C1233F25D4770C002B42B3 /* Options */,
+				11C1233E25D47704002B42B3 /* Order */,
+				11C1233D25D47700002B42B3 /* Payer */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		11C1233C25D476F2002B42B3 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				11B2E0CC25DAF52200A81E11 /* AkuratecoCard.swift */,
+				11B2E0CF25DAF52A00A81E11 /* AkuratecoCardFormatter.swift */,
+				11B2E0D225DAF53700A81E11 /* AkuratecoTestCard.swift */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		11C1233D25D47700002B42B3 /* Payer */ = {
+			isa = PBXGroup;
+			children = (
+				11B2E0E425DAF5A700A81E11 /* AkuratecoPayer.swift */,
+				11B2E0E725DAF5AD00A81E11 /* AkuratecoPayerOptions.swift */,
+				11B2E0EA25DAF5B400A81E11 /* AkuratecoPayerOptionsFormatter.swift */,
+			);
+			path = Payer;
+			sourceTree = "<group>";
+		};
+		11C1233E25D47704002B42B3 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				113FF4362611270E007DA1AE /* AkuratecoOrderProtocol.swift */,
+				11B2E0DB25DAF55E00A81E11 /* AkuratecoOrder.swift */,
+				11B2E0DE25DAF56800A81E11 /* AkuratecoSaleOrder.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		11C1233F25D4770C002B42B3 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				11B2E0D525DAF54C00A81E11 /* AkuratecoRecurringOptions.swift */,
+				11B2E0D825DAF55300A81E11 /* AkuratecoSaleOptions.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		11C1234025D47716002B42B3 /* Sale */ = {
+			isa = PBXGroup;
+			children = (
+				11BF2D6A25F8031D006C4B4F /* AkuratecoSale3ds.swift */,
+				1117DA1525F6AB6900C14534 /* AkuratecoSaleDecline.swift */,
+				11BF2D6E25F8040C006C4B4F /* AkuratecoSaleRecurring.swift */,
+				11BF2D7125F804AB006C4B4F /* AkuratecoSaleRedirectParams.swift */,
+				11BF2D7725F80698006C4B4F /* AkuratecoSaleResult.swift */,
+				11BF2D7425F805CE006C4B4F /* AkuratecoSaleSuccess.swift */,
+			);
+			path = Sale;
+			sourceTree = "<group>";
+		};
+		11C1234125D4773F002B42B3 /* GetTransactionStatus */ = {
+			isa = PBXGroup;
+			children = (
+				11BF2D6425F80277006C4B4F /* AkuratecoGetTransactionStatusSuccess.swift */,
+				11BF2D6725F802F0006C4B4F /* AkuratecoGetTransactionStatusResult.swift */,
+			);
+			path = GetTransactionStatus;
+			sourceTree = "<group>";
+		};
+		11C1234225D4774D002B42B3 /* GetTransactionDetails */ = {
+			isa = PBXGroup;
+			children = (
+				11BF2D6025F8021F006C4B4F /* AkuratecoGetTransactionDetailsResult.swift */,
+				11BF2D5C25F80158006C4B4F /* AkuratecoGetTransactionDetailsSuccess.swift */,
+				11BF2D5925F8007D006C4B4F /* AkuratecoTransaction.swift */,
+			);
+			path = GetTransactionDetails;
+			sourceTree = "<group>";
+		};
+		11C1234325D4775E002B42B3 /* Creditvoid */ = {
+			isa = PBXGroup;
+			children = (
+				11BF2D5325F7FDC8006C4B4F /* AkuratecoCreditvoidResult.swift */,
+				11BF2D5625F7FF22006C4B4F /* AkuratecoCreditvoidSuccess.swift */,
+			);
+			path = Creditvoid;
+			sourceTree = "<group>";
+		};
+		11C1234425D47766002B42B3 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				1117DA0E25F6A68400C14534 /* AkuratecoCaptureResult.swift */,
+				1117DA1225F6AA9E00C14534 /* AkuratecoCaptureSuccess.swift */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		11C1234525D4776F002B42B3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				11C1234725D47780002B42B3 /* Error */,
+				11C1234625D4777B002B42B3 /* Result */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		11C1234625D4777B002B42B3 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				1117DA0225F6A2C900C14534 /* AkuratekoResult.swift */,
+				1117DA0825F6A2F300C14534 /* OrderAkuratecoResult.swift */,
+				1117DA0525F6A2DA00C14534 /* DetailsAkuratecoResultProtocol.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		11C1234725D47780002B42B3 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				112FD0E725DB09DD000BE011 /* AkuratecoError.swift */,
+				1117DA0B25F6A4F600C14534 /* AkuratecoExactError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		11E2BE2E25FA80480044770F /* ApiClient */ = {
+			isa = PBXGroup;
+			children = (
+				1117DA1925F6B46C00C14534 /* AkuratecoRestApiClient.swift */,
+				11E2BE3025FA80500044770F /* XWWWFormUrlEncodable.swift */,
+			);
+			path = ApiClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		11C1231F25D4734A002B42B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C1232925D4734A002B42B3 /* AkuratecoSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1197845925F91A2A00DB4EC7 /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1197846D25F91A2C00DB4EC7 /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				1197845625F91A2A00DB4EC7 /* Sources */,
+				1197845725F91A2A00DB4EC7 /* Frameworks */,
+				1197845825F91A2A00DB4EC7 /* Resources */,
+				1197847525F91A4000DB4EC7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1197847425F91A4000DB4EC7 /* PBXTargetDependency */,
+			);
+			name = Sample;
+			packageProductDependencies = (
+				119784E025F95FB000DB4EC7 /* Fakery */,
+			);
+			productName = Sample;
+			productReference = 1197845A25F91A2A00DB4EC7 /* Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		11C1232325D4734A002B42B3 /* AkuratecoSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11C1232C25D4734A002B42B3 /* Build configuration list for PBXNativeTarget "AkuratecoSDK" */;
+			buildPhases = (
+				11C1231F25D4734A002B42B3 /* Headers */,
+				11C1232025D4734A002B42B3 /* Sources */,
+				11C1232125D4734A002B42B3 /* Frameworks */,
+				11C1232225D4734A002B42B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AkuratecoSDK;
+			productName = "Akurateco SDK";
+			productReference = 11C1232425D4734A002B42B3 /* AkuratecoSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11C1231B25D4734A002B42B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1197845925F91A2A00DB4EC7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					11C1232325D4734A002B42B3 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = 11C1231E25D4734A002B42B3 /* Build configuration list for PBXProject "AkuratecoSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11C1231A25D4734A002B42B3;
+			packageReferences = (
+				119784DF25F95FB000DB4EC7 /* XCRemoteSwiftPackageReference "Fakery" */,
+			);
+			productRefGroup = 11C1232525D4734A002B42B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11C1232325D4734A002B42B3 /* AkuratecoSDK */,
+				1197845925F91A2A00DB4EC7 /* Sample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1197845825F91A2A00DB4EC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1197846925F91A2C00DB4EC7 /* LaunchScreen.storyboard in Resources */,
+				119784C825F93AF800DB4EC7 /* AkuratecoGetTransDetails.storyboard in Resources */,
+				119784B925F93AB100DB4EC7 /* AkuratecoSale.storyboard in Resources */,
+				119784C225F93AEB00DB4EC7 /* AkuratecoCreditvoid.storyboard in Resources */,
+				1197846625F91A2C00DB4EC7 /* Assets.xcassets in Resources */,
+				119784C525F93AF300DB4EC7 /* AkuratecoGetTransStatus.storyboard in Resources */,
+				119784BC25F93ADF00DB4EC7 /* AkuratecoRecurringSale.storyboard in Resources */,
+				1197846425F91A2A00DB4EC7 /* Main.storyboard in Resources */,
+				119784BF25F93AE600DB4EC7 /* AkuratecoCapture.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C1232225D4734A002B42B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1152AEA8261254FD00F551BA /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1197845625F91A2A00DB4EC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1197846125F91A2A00DB4EC7 /* MainVC.swift in Sources */,
+				119784A025F9269300DB4EC7 /* AkuratecoButton.swift in Sources */,
+				1197848425F922DD00DB4EC7 /* AkuratecoCaptureVC.swift in Sources */,
+				1197848C25F9233800DB4EC7 /* AkuratecoGetTransDetailsVC.swift in Sources */,
+				1197848F25F9234400DB4EC7 /* AkuratecoGetTransStatusVC.swift in Sources */,
+				119784D025F94AA200DB4EC7 /* BaseViewController.swift in Sources */,
+				119784D825F9556000DB4EC7 /* AkuratecoTransactionStorage.swift in Sources */,
+				1197848825F9232000DB4EC7 /* AkuratecoCreditvoidVC.swift in Sources */,
+				1197845D25F91A2A00DB4EC7 /* AppDelegate.swift in Sources */,
+				119784D325F94CFE00DB4EC7 /* Helpers.swift in Sources */,
+				11E2BE1625FA325F0044770F /* AkuratecoChooserVC.swift in Sources */,
+				119784A425F92AA700DB4EC7 /* AkuratecoRadioButton.swift in Sources */,
+				1197849225F9234E00DB4EC7 /* AkuratecoRecurringSaleVC.swift in Sources */,
+				1197849525F9235700DB4EC7 /* AkuratecoRedirect3dsVC.swift in Sources */,
+				1197849825F9236200DB4EC7 /* AkuratecoSaleVC.swift in Sources */,
+				11E2BE1A25FA394B0044770F /* TransactionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		11C1232025D4734A002B42B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11BF2D5D25F80158006C4B4F /* AkuratecoGetTransactionDetailsSuccess.swift in Sources */,
+				112FD0E825DB09DD000BE011 /* AkuratecoError.swift in Sources */,
+				11BF2D7525F805CE006C4B4F /* AkuratecoSaleSuccess.swift in Sources */,
+				11B2E0A025DAF47600A81E11 /* AkuratecoBaseAdapter.swift in Sources */,
+				11BF2D8125F8080F006C4B4F /* AkuratecoRecurringSaleService.swift in Sources */,
+				11E2BE2625FA7C820044770F /* AkuratecoCreditvoidDeserializer.swift in Sources */,
+				11B2E0E525DAF5A700A81E11 /* AkuratecoPayer.swift in Sources */,
+				11B2E09D25DAF45100A81E11 /* AkuratecoSDK.swift in Sources */,
+				11BF2D4E25F7FACC006C4B4F /* AkuratecoCaptureService.swift in Sources */,
+				113FF4372611270E007DA1AE /* AkuratecoOrderProtocol.swift in Sources */,
+				11B2E0C125DAF4FC00A81E11 /* AkuratecoResult.swift in Sources */,
+				11BF2D7E25F807DC006C4B4F /* AkuratecoGetTransactionStatusService.swift in Sources */,
+				11BF2D5A25F8007D006C4B4F /* AkuratecoTransaction.swift in Sources */,
+				11BF2D7825F80698006C4B4F /* AkuratecoSaleResult.swift in Sources */,
+				11B2E0BE25DAF4F500A81E11 /* AkuratecoRedirectMethod.swift in Sources */,
+				11BF2D8725F81062006C4B4F /* AkuratecoExtensions.swift in Sources */,
+				11BF2D6B25F8031D006C4B4F /* AkuratecoSale3ds.swift in Sources */,
+				11B2E0D025DAF52A00A81E11 /* AkuratecoCardFormatter.swift in Sources */,
+				11BF2D6525F80277006C4B4F /* AkuratecoGetTransactionStatusSuccess.swift in Sources */,
+				11B2E0A925DAF49A00A81E11 /* AkuratecoCreditvoidAdapter.swift in Sources */,
+				11B2E0A325DAF48B00A81E11 /* AkuratecoCallback.swift in Sources */,
+				11E2BE3125FA80500044770F /* XWWWFormUrlEncodable.swift in Sources */,
+				1117DA0F25F6A68400C14534 /* AkuratecoCaptureResult.swift in Sources */,
+				11BF2D7B25F80737006C4B4F /* AkuratecoGetTransactionDetailsService.swift in Sources */,
+				11B2E0DC25DAF55E00A81E11 /* AkuratecoOrder.swift in Sources */,
+				1117DA1325F6AA9E00C14534 /* AkuratecoCaptureSuccess.swift in Sources */,
+				11E2BE2325FA7B2B0044770F /* AkuratecoCaptureDeserializer.swift in Sources */,
+				11BF2D5725F7FF22006C4B4F /* AkuratecoCreditvoidSuccess.swift in Sources */,
+				11B2E0D325DAF53700A81E11 /* AkuratecoTestCard.swift in Sources */,
+				11B2E0EB25DAF5B400A81E11 /* AkuratecoPayerOptionsFormatter.swift in Sources */,
+				1117DA0925F6A2F300C14534 /* OrderAkuratecoResult.swift in Sources */,
+				11B2E0A625DAF49200A81E11 /* AkuratecoCaptureAdapter.swift in Sources */,
+				11BF2D6125F8021F006C4B4F /* AkuratecoGetTransactionDetailsResult.swift in Sources */,
+				114DA6B525F51399007A8DF7 /* AkuratecoCredential.swift in Sources */,
+				11B2E0D925DAF55300A81E11 /* AkuratecoSaleOptions.swift in Sources */,
+				11BF2D8425F808A2006C4B4F /* AkuratecoSaleService.swift in Sources */,
+				11B2E0C725DAF50A00A81E11 /* AkuratecoTransactionStatus.swift in Sources */,
+				11BF2D6F25F8040C006C4B4F /* AkuratecoSaleRecurring.swift in Sources */,
+				1105F97D2611104A00039963 /* AkuratecoAdapterFactory.swift in Sources */,
+				11B2E0CD25DAF52200A81E11 /* AkuratecoCard.swift in Sources */,
+				11B2E0E825DAF5AD00A81E11 /* AkuratecoPayerOptions.swift in Sources */,
+				11B2E0B525DAF4B800A81E11 /* AkuratecoSaleAdapter.swift in Sources */,
+				1117DA0C25F6A4F600C14534 /* AkuratecoExactError.swift in Sources */,
+				11BF2D8A25F811E7006C4B4F /* AkuratecoAmountFormatter.swift in Sources */,
+				11B2E0C425DAF50300A81E11 /* AkuratecoStatus.swift in Sources */,
+				11E2BE2025FA728F0044770F /* AkuratecoSaleDeserializer.swift in Sources */,
+				11BF2D5425F7FDC8006C4B4F /* AkuratecoCreditvoidResult.swift in Sources */,
+				1117DA0325F6A2C900C14534 /* AkuratekoResult.swift in Sources */,
+				11B2E0B825DAF4E000A81E11 /* AkuratecoAction.swift in Sources */,
+				1117DA1A25F6B46C00C14534 /* AkuratecoRestApiClient.swift in Sources */,
+				11B2E0D625DAF54C00A81E11 /* AkuratecoRecurringOptions.swift in Sources */,
+				11E2BE2925FA7E890044770F /* AkuratecoGetTransactionDetailsDeserializer.swift in Sources */,
+				11B2E0BB25DAF4ED00A81E11 /* AkuratecoOption.swift in Sources */,
+				11B2E0DF25DAF56800A81E11 /* AkuratecoSaleOrder.swift in Sources */,
+				11B2E0AC25DAF4A400A81E11 /* AkuratecoGetTransactionDetailsAdapter.swift in Sources */,
+				11B2E0AF25DAF4AB00A81E11 /* AkuratecoGetTransactionStatusAdapter.swift in Sources */,
+				11E2BE2C25FA7ECF0044770F /* AkuratecoGetTransactionStatusDeserializer.swift in Sources */,
+				1117DA0025F68DA600C14534 /* AkuratecoHashUtil.swift in Sources */,
+				1117DA0625F6A2DA00C14534 /* DetailsAkuratecoResultProtocol.swift in Sources */,
+				11BF2D7225F804AB006C4B4F /* AkuratecoSaleRedirectParams.swift in Sources */,
+				11B2E0B225DAF4B100A81E11 /* AkuratecoRecurringSaleAdapter.swift in Sources */,
+				11E2BE1D25FA6EA20044770F /* AkuratekoDateFormatter.swift in Sources */,
+				11BF2D6825F802F0006C4B4F /* AkuratecoGetTransactionStatusResult.swift in Sources */,
+				11BF2D5125F7FD20006C4B4F /* AkuratecoCreditvoidService.swift in Sources */,
+				11B2E0CA25DAF51100A81E11 /* AkuratecoTransactionType.swift in Sources */,
+				1117DA1625F6AB6900C14534 /* AkuratecoSaleDecline.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1197847425F91A4000DB4EC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 11C1232325D4734A002B42B3 /* AkuratecoSDK */;
+			targetProxy = 1197847325F91A4000DB4EC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1197846225F91A2A00DB4EC7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1197846325F91A2A00DB4EC7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1197846725F91A2C00DB4EC7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1197846825F91A2C00DB4EC7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1197846B25F91A2C00DB4EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 29R5XY2X5N;
+				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iBodia.akurateko.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1197846C25F91A2C00DB4EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 29R5XY2X5N;
+				INFOPLIST_FILE = Sample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iBodia.akurateko.sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		11C1232A25D4734A002B42B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		11C1232B25D4734A002B42B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		11C1232D25D4734A002B42B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 29R5XY2X5N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AkuratecoSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iBodia.akurateco.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11C1232E25D4734A002B42B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 29R5XY2X5N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AkuratecoSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = iBodia.akurateco.sdk;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1197846D25F91A2C00DB4EC7 /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1197846B25F91A2C00DB4EC7 /* Debug */,
+				1197846C25F91A2C00DB4EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C1231E25D4734A002B42B3 /* Build configuration list for PBXProject "AkuratecoSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C1232A25D4734A002B42B3 /* Debug */,
+				11C1232B25D4734A002B42B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11C1232C25D4734A002B42B3 /* Build configuration list for PBXNativeTarget "AkuratecoSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11C1232D25D4734A002B42B3 /* Debug */,
+				11C1232E25D4734A002B42B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		119784DF25F95FB000DB4EC7 /* XCRemoteSwiftPackageReference "Fakery" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vadymmarkov/Fakery";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		119784E025F95FB000DB4EC7 /* Fakery */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 119784DF25F95FB000DB4EC7 /* XCRemoteSwiftPackageReference "Fakery" */;
+			productName = Fakery;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 11C1231B25D4734A002B42B3 /* Project object */;
+}
