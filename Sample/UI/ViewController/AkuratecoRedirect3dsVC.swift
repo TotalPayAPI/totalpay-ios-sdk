@@ -42,7 +42,7 @@ final class AkuratecoRedirect3dsVC: UIViewController {
         let configuration = WKWebViewConfiguration()
         configuration.preferences = preferences
         
-        webView = WKWebView(frame: view.bounds, configuration: configuration)
+        webView = WKWebView(frame: .zero, configuration: configuration)
         webView.navigationDelegate = self
         view = webView
     }
