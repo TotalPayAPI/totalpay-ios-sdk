@@ -17,7 +17,7 @@ final class AkuratecoRedirect3dsVC: UIViewController {
 
     var completion: ((Bool) -> Void)?
     
-    private lazy var webView = WKWebView()
+    private var webView: WKWebView!
     
     init(termUrl: String,
          termUrl3Ds: String,
@@ -36,6 +36,13 @@ final class AkuratecoRedirect3dsVC: UIViewController {
     }
     
     override func loadView() {
+        let preferences = WKPreferences()
+        preferences.javaScriptEnabled = true
+        
+        let configuration = WKWebViewConfiguration()
+        configuration.preferences = preferences
+        
+        webView = WKWebView(frame: view.bounds, configuration: configuration)
         webView.navigationDelegate = self
         view = webView
     }
