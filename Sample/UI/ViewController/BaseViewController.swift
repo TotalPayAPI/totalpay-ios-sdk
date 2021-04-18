@@ -15,7 +15,7 @@ class BaseViewController: UIViewController {
     
     @IBOutlet var scrollView: UIScrollView!
     
-    @IBOutlet var lbResponse: UILabel!
+    @IBOutlet var lbResponse: UITextView!
     @IBOutlet var loader: UIActivityIndicatorView!
     
     // MARK: - Properties
@@ -29,7 +29,7 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         
         lbResponse.text = ""
-        lbResponse.numberOfLines = 0
+        lbResponse.isEditable = false
         lbResponse.font = .systemFont(ofSize: 13)
         lbResponse.textColor = .darkText
         
@@ -40,10 +40,14 @@ class BaseViewController: UIViewController {
     
     // MARK: - Methods
     
-    func openRedirect3Ds(termUrl: String, termUrl3Ds: String) {
-        let redirect3DsVC = AkuratecoRedirect3dsVC()
-        redirect3DsVC.termUrl = termUrl
-        redirect3DsVC.termUrl3Ds = termUrl3Ds
+    func openRedirect3Ds(termUrl: String,
+                         termUrl3Ds: String,
+                         redirectUrl: String,
+                         paymentRequisites: String) {
+        let redirect3DsVC = AkuratecoRedirect3dsVC(termUrl: termUrl,
+                                                   termUrl3Ds: termUrl3Ds,
+                                                   redirectUrl: redirectUrl,
+                                                   paymentRequisites: paymentRequisites)
         redirect3DsVC.completion = { [unowned self] in
             if ($0) { self.showInfo("The 3ds operation has been completed.") }
         }

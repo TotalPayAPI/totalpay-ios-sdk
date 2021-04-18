@@ -184,7 +184,9 @@ private extension AkuratecoSaleVC {
                     
                 case .secure3d(let result):
                     self.openRedirect3Ds(termUrl: result.redirectParams.termUrl,
-                                         termUrl3Ds: termUrl3ds)
+                                         termUrl3Ds: termUrl3ds,
+                                         redirectUrl: result.redirectUrl,
+                                         paymentRequisites: result.redirectParams.paymentRequisites)
                     
                 default: break
                 }

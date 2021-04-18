@@ -10,13 +10,30 @@ import WebKit
 
 final class AkuratecoRedirect3dsVC: UIViewController {
     
-    var termUrl: String!
-    var termUrl3Ds: String!
+    var termUrl: String
+    var termUrl3Ds: String
+    var redirectUrl: String
+    var paymentRequisites: String
 
     var completion: ((Bool) -> Void)?
     
     private lazy var webView = WKWebView()
-    private lazy var loader = UIActivityIndicatorView(style: .gray)
+    
+    init(termUrl: String,
+         termUrl3Ds: String,
+         redirectUrl: String,
+         paymentRequisites: String) {
+        self.termUrl = termUrl
+        self.termUrl3Ds = termUrl3Ds
+        self.redirectUrl = redirectUrl
+        self.paymentRequisites = paymentRequisites
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func loadView() {
         webView.navigationDelegate = self
@@ -27,22 +44,29 @@ final class AkuratecoRedirect3dsVC: UIViewController {
         navigationItem.setRightBarButton(.init(title: "Close", style: .plain, target: self, action: #selector(closeAction)),
                                          animated: false)
         
-        loader.hidesWhenStopped = true
-        loader.stopAnimating()
-        loader.translatesAutoresizingMaskIntoConstraints = false
-        loader.color = .orange
-        view.addSubview(loader)
-        
-        NSLayoutConstraint.activate([loader.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                                     loader.centerYAnchor.constraint(equalTo: view.centerYAnchor)])
+        /* Create HTML document with needed redirect values and put them to Webview */
+        /* The form is completely invisible and submits data on its own */
+        let htmlString = """
+        <html>
+            <head><title></title></head>
+            <body>
+                <form method='POST' action='\(redirectUrl)'>
+                    <input type='hidden' name='TermUrl' value='\(termUrl)'>
+                    <input type='hidden' name='PaReq' value='\(paymentRequisites)'>
+                    <input style='display:none;' id='send' type='submit' value='send'>
+                </form>
+                <script>document.addEventListener('DOMContentLoaded', document.getElementById('send').click());</script>
+            </body>
+        </html>
+        """;
+       
+        webView.loadHTMLString(htmlString, baseURL: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         navigationController?.setNavigationBarHidden(false, animated: animated)
-        
-        webView.load(URLRequest(url: URL(string: termUrl)!))
     }
     
     @objc private func closeAction() {
@@ -61,13 +85,5 @@ extension AkuratecoRedirect3dsVC: WKNavigationDelegate {
         dismiss(animated: true, completion: nil)
         completion?(true)
         decisionHandler(.cancel)
-    }
-    
-    func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
-        loader.startAnimating()
-    }
-    
-    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        loader.stopAnimating()
     }
 }

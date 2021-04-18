@@ -22,10 +22,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wV-N9-ycb">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="553"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="WN1-AZ-crK">
-                                                <rect key="frame" x="16" y="16" width="382" height="521"/>
+                                                <rect key="frame" x="16" y="16" width="382" height="684"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7xQ-4d-CsO">
                                                         <rect key="frame" x="0.0" y="0.0" width="382" height="142.5"/>
@@ -110,7 +110,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="JW1-tj-tbg">
-                                                        <rect key="frame" x="0.0" y="464.5" width="382" height="56.5"/>
+                                                        <rect key="frame" x="0.0" y="464.5" width="382" height="219.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" id="mSG-l0-Vda">
                                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="20"/>
@@ -133,12 +133,14 @@
                                                                 </subviews>
                                                                 <viewLayoutGuide key="safeArea" id="i3l-9t-yzc"/>
                                                             </stackView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBR-0y-0vg">
-                                                                <rect key="frame" x="0.0" y="36" width="382" height="20.5"/>
-                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
+                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="njb-Pr-xHX">
+                                                                <rect key="frame" x="0.0" y="36" width="382" height="183.5"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                                <color key="textColor" systemColor="labelColor"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -176,7 +178,7 @@
                     <connections>
                         <outlet property="btnLoadAll" destination="7h9-Ou-yce" id="QC0-Nf-gSz"/>
                         <outlet property="btnSelectTransaction" destination="Fzt-xJ-5XH" id="Yq3-z5-I5z"/>
-                        <outlet property="lbResponse" destination="IBR-0y-0vg" id="2fZ-e3-FRj"/>
+                        <outlet property="lbResponse" destination="njb-Pr-xHX" id="8fv-0d-YY9"/>
                         <outlet property="lbSelectedTransaction" destination="NSw-lO-AHd" id="Y75-uK-J8v"/>
                         <outlet property="loader" destination="WMi-AQ-j1G" id="Ygh-9e-NRS"/>
                         <outlet property="scrollView" destination="fb1-Fu-FtN" id="OIC-va-R64"/>
@@ -192,6 +194,9 @@
         <namedColor name="Orange">
             <color red="0.92549019607843142" green="0.30980392156862746" blue="0.22352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
