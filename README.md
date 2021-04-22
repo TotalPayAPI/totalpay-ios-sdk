@@ -29,14 +29,6 @@ Add to the `Podfile`:
 pod 'AkuratecoSDK'
 ```
 
-Or add to the Swift Package Manager:
-
-```
-dependencies: [
-    .package(url: "https://github.com/akurateco/akurateco-ios-sdk"))
-]
-```
-
 Latest version is: ![](https://cocoapod-badges.herokuapp.com/v/AkuratecoSDK/badge.png) 
 
 Also, it is possible to download the latest artifact from the [releases page](https://github.com/akurateco/akurateco-ios-sdk/releases).
