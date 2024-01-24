@@ -1,12 +1,12 @@
 ![](https://cocoapod-badges.herokuapp.com/v/AkuratecoSDK/badge.png) | [View SDK Wiki](https://github.com/akurateco/akurateco-ios-sdk/wiki) | [Report new issue](https://github.com/akurateco/akurateco-ios-sdk/issues/new)
 
-# Akurateco iOS SDK
+# TotalPay iOS SDK
 
-Akurateco is a white-label payment software provider. Thanks to our 15+ years of experience in the payment industry, we’ve developed a state-of-the-art white-label payment system that ensures smooth and uninterrupted payment flow for merchants across industries.
+TotalPay is a Payment Service Provider. Thanks to our 15+ years of experience in the payment industry, we’ve developed a state-of-the-art payment system that ensures smooth and uninterrupted payment flow for merchants across industries.
 
 <p align="center">
-  <a href="https://akurateco.com">
-      <img src="/media/header.jpg" alt="Akurateco" width="400px"/>
+  <a href="https://totalpay.global">
+      <img src="/media/header.png" alt="TotalPay" width="400px"/>
   </a>
 </p>
 
