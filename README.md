@@ -10,16 +10,16 @@ TotalPay is a Payment Service Provider. Thanks to our 15+ years of experience in
   </a>
 </p>
 
-Akurateco iOS SDK was developed and designed with one purpose: to help the iOS developers easily integrate the Akurateco API Payment Platform for a specific merchant. 
+TotalPay iOS SDK was developed and designed with one purpose: to help the iOS developers easily integrate the TotalPay API Payment Platform for a specific merchant. 
 
-The main aspects of the Akurateco iOS SDK:
+The main aspects of the TotalPay iOS SDK:
 
 - [Swift](https://developer.apple.com/swift/) is the main language 
 - Minimum iOS 11
 - Sample Application
 
-To properly set up the SDK, read [Wiki](https://github.com/akurateco/akurateco-ios-sdk/wiki) first.
-To get used to the SDK, download a [sample app](https://github.com/akurateco/akurateco-ios-sdk/tree/main/sample).
+To properly set up the SDK, read [Wiki](https://github.com/TotalPayAPI/akurateco-ios-sdk/wiki) first.
+To get used to the SDK, download a [sample app](https://github.com/TotalPayAPI/akurateco-ios-sdk/tree/main/sample).
 
 ## Setup
 
@@ -31,7 +31,7 @@ pod 'AkuratecoSDK'
 
 Latest version is: ![](https://cocoapod-badges.herokuapp.com/v/AkuratecoSDK/badge.png) 
 
-Also, it is possible to download the latest artifact from the [releases page](https://github.com/akurateco/akurateco-ios-sdk/releases).
+Also, it is possible to download the latest artifact from the [releases page](https://github.com/TotalPayAPI/akurateco-ios-sdk/releases).
 
 ## Sample
 
@@ -51,7 +51,7 @@ Or write a direct letter to the [info@totalpay.global](mailto:info@totalpay.glob
 
 ## License
 
-MIT License. See the [LICENSE](https://github.com/akurateco/akurateco-ios-sdk/blob/main/LICENSE) file for more details.
+MIT License. See the [LICENSE](https://github.com/TotalPayAPI/akurateco-ios-sdk/blob/main/LICENSE) file for more details.
 
 ## Contacts
 
