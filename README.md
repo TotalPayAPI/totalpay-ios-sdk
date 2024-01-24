@@ -45,9 +45,9 @@ Also, it is possible to download the latest artifact from the [releases page](ht
 
 ## Getting help
 
-To report a specific issue or feature request, open a [new issue](https://github.com/akurateco/akurateco-ios-sdk/issues/new).
+To report a specific issue or feature request, open a [new issue](https://github.com/TotalPayAPI/totalpay-android-sdk/issues/new).
 
-Or write a direct letter to the [admin@akurateco.com](mailto:admin@akurateco.com).
+Or write a direct letter to the [info@totalpay.global](mailto:info@totalpay.global).
 
 ## License
 
@@ -55,11 +55,11 @@ MIT License. See the [LICENSE](https://github.com/akurateco/akurateco-ios-sdk/bl
 
 ## Contacts
 
-![](/media/footer.jpg)
+![](/media/header.png)
 
-Website: https://akurateco.com  
-Phone: [+31-638-7642-70](tel:31638764270)  
-Email: [admin@akurateco.com](mailto:admin@akurateco.com)  
-Address: Akurateco BV, Kingsfordweg 151, 1043 GR Amsterdam, The Netherlands  
+Website: https://totalpay.global  
+Phone: [+971 4 4578506](tel:+97144578506)  
+Email: [info@totalpay.global](mailto:info@totalpay.global)  
+Address: i-Rise Tower, Barsha Heights, Dubai, UAE.
 
-© 2014 - 2021 Akurateco. All rights reserved.
+© 2022 - 2024 TotalPay. All rights reserved.
